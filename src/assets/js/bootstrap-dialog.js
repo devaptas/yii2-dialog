@@ -231,7 +231,7 @@
     BootstrapDialog.BUTTON_SIZES[BootstrapDialog.SIZE_NORMAL] = '';
     BootstrapDialog.BUTTON_SIZES[BootstrapDialog.SIZE_SMALL] = 'btn-small';
     BootstrapDialog.BUTTON_SIZES[BootstrapDialog.SIZE_LARGE] = 'btn-lg';
-    BootstrapDialog.BUTTON_SIZES[BootstrapDialog.SIZE_WIDE] = 'btn-block';
+    BootstrapDialog.BUTTON_SIZES[BootstrapDialog.SIZE_WIDE] = '';
     BootstrapDialog.ICON_SPINNER = 'glyphicon glyphicon-asterisk';
     BootstrapDialog.BUTTONS_ORDER_CANCEL_OK = 'btns-order-cancel-ok';
     BootstrapDialog.BUTTONS_ORDER_OK_CANCEL = 'btns-order-ok-cancel';
@@ -607,9 +607,9 @@
                     this.getModalDialog().addClass('modal-lg');
                 }
                 // Extra Wide Dialog.
-                this.getModalDialog().removeClass('modal-xl');
+                this.getModalDialog().removeClass('modal-lg');
                 if (size === BootstrapDialog.SIZE_WIDE) {
-                    this.getModalDialog().addClass('modal-xl');
+                    this.getModalDialog().addClass('modal-lg');
                 }
 
                 // Button size
